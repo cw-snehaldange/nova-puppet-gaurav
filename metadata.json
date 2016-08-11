@@ -1,0 +1,11 @@
+{
+  "name" : "nova-controller" , 
+  "author" : "Gaurav Bajaj" ,
+  "summary" : "Deploying nova controller" , 
+  "project" : "https://github.com/galactro50/nova-puppet-gaurav" , 
+  "dependencies" : [
+    {"name" : "puppetlabs-mysql"}
+    {"name" : "saz-sudo"}
+    {"name" : "puppetlabs-inifile"}
+   ]
+}
