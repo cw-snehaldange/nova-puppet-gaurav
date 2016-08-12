@@ -1,2 +1,15 @@
-# nova-puppet-gaurav
-This will contain puppet code submitted by gaurav bajaj
+OVERVIEW:
+This module contains code snippet of installing and configuring nova controller.
+
+DESCRIPTION:
+The main file is init.pp which is executed at first. It includes other files mentioned below:
+
+databasecreate :      to create database
+novauser :            privileges for nova user
+source :              shell command to source admin-openrc
+service_endpoint :    to create services and endpoints
+install :             to install the required packages
+config :              to configure the conf file
+novasdmin :           nova as admin
+shell :               shell commands
+restart :             to restart the required packages
