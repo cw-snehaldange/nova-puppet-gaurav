@@ -1,4 +1,4 @@
-# include mysql
+#This class is main file. It includes all the other branch class. This class run as soon as rin command is given.
 class nova
 {
 
@@ -11,5 +11,5 @@ class nova
   include novaadmin
   include shell
   include restart
-
+  
 }

@@ -1,23 +1,20 @@
-class service_endpoint{
+#This class creates endpoints and groups and assign nova user to the groups
 
+class service_endpoint
+{
 
-
-group { "service":
+  group { "service":
       ensure => present,
-     
-  }
+      }
 
-group { "endpoint":
+  group { "endpoint":
       ensure => present,
-     
-  }
+      }
 
 
-user { "nova":
+  user { "nova":
     ensure => present,
     groups => ['service', 'endpoint'],
-}
-
-
+    }
 
 }
